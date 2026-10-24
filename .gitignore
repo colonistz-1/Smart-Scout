@@ -1,0 +1,46 @@
+# --- Data (keep data out of version control; commit instructions, not files) ---
+data/*
+!data/README.md
+!data/.gitkeep
+
+# --- Model weights (small models may be committed; >100MB needs Git LFS) ---
+models/*
+!models/README.md
+!models/.gitkeep
+
+# --- Run outputs (figures, metrics, logs are reproducible) ---
+outputs/*
+!outputs/README.md
+!outputs/.gitkeep
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Secrets & environment variables ---
+.env
+*.pem
+
+# --- Editors & OS noise ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Experiment trackers / caches (uncomment as needed) ---
+# mlruns/
+# wandb/
+# .mypy_cache/
+# .pytest_cache/
