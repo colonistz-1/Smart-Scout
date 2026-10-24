@@ -1,26 +1,16 @@
-# Central place for all experiment settings.
-# Change hyperparameters here — never hard-code them in your scripts.
-# For a new experiment, copy this file (e.g. config_exp02.yaml) and pass it
-# to the training script:  python scripts/train.py --config config/config_exp02.yaml
+# K-Means Configuration
 
 data:
-  # Path to your dataset. The example falls back to the built-in Iris dataset
-  # when this file does not exist, so the template runs out of the box.
-  path: data/iris.csv
-  target_column: species
-  test_size: 0.2
+  path: data/raw/premier_league_stats_2025_26.csv
+  min_minutes: 450
 
 model:
-  type: random_forest        # see src/model.py for supported types
-  params:
-    n_estimators: 200
-    max_depth: 5
-    random_state: 42
+  type: kmeans
+  n_clusters: 3
 
 training:
   random_state: 42
 
 output:
-  model_path: models/model.joblib
-  metrics_path: outputs/metrics.json
-  figures_dir: outputs/figures
+  processed_path: data/processed/midfielder_clusters.csv
+  model_path: models/kmeans_baseline.joblib
