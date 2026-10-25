@@ -1,0 +1,16 @@
+# K-Means Configuration
+
+data:
+  path: data/raw/premier_league_stats_2025_26.csv
+  min_minutes: 450
+
+model:
+  type: kmeans
+  n_clusters: 3
+
+training:
+  random_state: 42
+
+output:
+  processed_path: data/processed/midfielder_clusters_v2.csv
+  model_path: models/kmeans_v2.joblib

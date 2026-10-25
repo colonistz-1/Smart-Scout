@@ -7,6 +7,8 @@ FEATURES = [
     "scoring.expected_assists",
     "defending.tackles",
     "defending.interceptions",
+    "passing.key_passes",
+    "passing.accurate_crosses",
 ]
 
 MODEL_FEATURES = [f"{feature}_per90" for feature in FEATURES]
