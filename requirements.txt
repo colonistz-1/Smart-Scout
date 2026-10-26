@@ -3,7 +3,9 @@ pandas
 scikit-learn
 joblib
 matplotlib
+seaborn
 streamlit
 requests
 python-dotenv
+PyYAML
 ipykernel
