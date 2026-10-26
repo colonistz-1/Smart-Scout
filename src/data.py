@@ -21,24 +21,3 @@ def load_data(path: str) -> pd.DataFrame:
     csv_path = Path(path)
     if csv_path.exists():
         return pd.read_csv(csv_path)
-
-    from sklearn.datasets import load_iris
-
-    iris = load_iris(as_frame=True)
-    df = iris.frame.rename(columns={"target": "species"})
-    df["species"] = df["species"].map(dict(enumerate(iris.target_names)))
-    return df
-
-
-def split_features_target(df: pd.DataFrame, target_column: str):
-    """Separate the feature matrix X from the target vector y."""
-    X = df.drop(columns=[target_column])
-    y = df[target_column]
-    return X, y
-
-
-def make_train_test_split(X, y, test_size: float, random_state: int):
-    """Stratified train/test split so class balance is preserved."""
-    return train_test_split(
-        X, y, test_size=test_size, random_state=random_state, stratify=y
-    )
