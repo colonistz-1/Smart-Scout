@@ -6,6 +6,7 @@ matplotlib
 seaborn
 streamlit
 requests
+plotly
 python-dotenv
 PyYAML
 ipykernel
