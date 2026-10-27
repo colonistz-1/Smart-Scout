@@ -1,5 +1,7 @@
 # Smart-Scout
 
+[Smart-Scout](https://smart-scout-n77kdyuhlfyx5kahq9krpe.streamlit.app/)
+
 A football scouting application that groups Premier League midfielders by
 statistical profile and finds players with similar contributions.
 
