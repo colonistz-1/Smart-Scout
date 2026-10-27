@@ -11,8 +11,7 @@ models/*
 
 # --- Run outputs (figures, metrics, logs are reproducible) ---
 outputs/*
-!outputs/README.md
-!outputs/.gitkeep
+
 
 # --- Python ---
 __pycache__/
