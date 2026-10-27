@@ -46,3 +46,4 @@ Thumbs.db
 # .mypy_cache/
 # .pytest_cache/
 app/assets/soccer-ball_26bd.png
+outputs/README.md
