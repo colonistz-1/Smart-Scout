@@ -7,6 +7,7 @@ data/*
 models/*
 !models/README.md
 !models/.gitkeep
+!models/kmeans_v2.joblib
 
 # --- Run outputs (figures, metrics, logs are reproducible) ---
 outputs/*
